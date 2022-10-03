@@ -11,6 +11,7 @@ public class Mammal {
 		
 	}
 	
+	
 //	overloaded constructor
 	public Mammal(int energyLevel) {
 		this.energyLevel = energyLevel;

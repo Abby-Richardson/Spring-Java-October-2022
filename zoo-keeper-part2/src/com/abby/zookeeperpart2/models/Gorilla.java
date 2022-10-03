@@ -1,7 +1,7 @@
 package com.abby.zookeeperpart2.models;
 
 public class Gorilla extends Mammal{
-
+//	attributes
 	public Gorilla() {
 		super();
 	}

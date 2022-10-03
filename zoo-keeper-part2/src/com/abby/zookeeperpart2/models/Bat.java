@@ -1,17 +1,17 @@
 package com.abby.zookeeperpart2.models;
 
 public class Bat extends Mammal{
-	int batEnergyLevel = setEnergyLevel(300);
+//	attributes
 
 	
 	public Bat() {
-		super();
+		super(300);
 	}
 		
 	
 //	methods
 	public int fly() {
-		int currentEnergy = getEnergyLevel() -50;
+		int currentEnergy = this.getEnergyLevel() -50;
 		setEnergyLevel(currentEnergy);
 		System.out.println("**Wings flapping, flying away**");
 		return currentEnergy;
@@ -19,14 +19,14 @@ public class Bat extends Mammal{
 	}
 	
 	public int eatHumans() {
-		int currentEnergy = getEnergyLevel() +25;
+		int currentEnergy = this.getEnergyLevel() +25;
 		setEnergyLevel(currentEnergy);
 		System.out.println("Yummm");
 		return currentEnergy;
 	}
 	
 	public int attackTown() {
-		int currentEnergy = getEnergyLevel() -100;
+		int currentEnergy = this.getEnergyLevel() -100;
 		setEnergyLevel(currentEnergy);
 		System.out.println("**Setting the town to flames**");
 		return currentEnergy;
